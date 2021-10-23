@@ -10,12 +10,16 @@
     "react-scripts": "^3.1.0",
     "survey-creator": "latest",
     "survey-react": "latest",
-    "surveyjs-widgets": "latest"
+    "surveyjs-widgets": "latest",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
